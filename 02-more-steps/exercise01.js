@@ -6,7 +6,7 @@
 // isos fofunon".
 
 function translate (text) {
-  return text.replace(/([b-df-hj-np-tv-z])/g, '$1' + 'o' + '$1')
+  return text.replace(/([b-df-hj-np-tv-z])/gi, '$1' + 'o' + '$1')
 }
 
 translate('this is fun')
