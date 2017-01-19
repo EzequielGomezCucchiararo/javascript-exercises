@@ -5,8 +5,8 @@
 // For example, translate("this is fun") should return the string "tothohisos
 // isos fofunon".
 
-function translate (text) {
-  return text.replace(/([b-df-hj-np-tv-z])/gi, '$1' + 'o' + '$1')
+function translateToRovarspraket (originalText) {
+  return originalText.replace(/[b-df-hj-np-tv-z]/gi, '$&o$&')
 }
 
-translate('this is fun')
+translateToRovarspraket('this is fun')
